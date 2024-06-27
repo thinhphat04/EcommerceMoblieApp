@@ -30,7 +30,6 @@ const validatePassword = [
       'Password must contain at least one uppercase, one lowercase, and one symbol.'
     ),
 ];
-
 router.post('/login', authController.login);
 
 router.post('/register', validateUser, authController.register);

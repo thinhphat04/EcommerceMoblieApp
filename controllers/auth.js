@@ -108,6 +108,7 @@ exports.verifyToken = async function (req, res) {
     return res.status(500).json({ type: error.name, message: error.message });
   }
 };
+
 exports.forgotPassword = async function (req, res) {
   try {
     const { email } = req.body;
